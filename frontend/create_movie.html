@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListarPeliculas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            height: 650px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">   Movies</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Ver películas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="create_movie.html">Agregar película</a>
+            </ul>
+        </div>
+    </nav>
+    <!--Información de los resultados de citas anteriores-->
+    <div class="container mt-5">
+        <h1 class="text-center">Movies</h1>
+        <h4 class="text-center">Agrega una lista a la base de datos</h4>
+        <br>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <form id="movie-form">
+                    <div>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="synopsis">Sinopsis:</label>
+                        <textarea id="synopsis" name="synopsis" required></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="genre">Género:</label>
+                        <input type="text" id="genre" name="genre" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="duration">Duración:</label>
+                        <input type="number" id="duration" name="duration" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="director">Director:</label>
+                        <input type="text" id="director" name="director" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="actors">Actores (separados por comas):</label>
+                        <input type="text" id="actors" name="actors">
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Agregar Película</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
