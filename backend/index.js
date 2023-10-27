@@ -12,8 +12,6 @@ app.use('', rutas);
 
 const mongoUrl = 'mongodb+srv://temp_user:hbQ2TrDsGwZ45CkS@cluster0.rwnosv0.mongodb.net/info?retryWrites=true&w=majority'
 
-
-
 mongoose.connect(mongoUrl).then(() =>{
     app.listen(3000, () =>{
         console.log('app is running...')
